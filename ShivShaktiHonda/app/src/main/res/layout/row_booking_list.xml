@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="@dimen/margin_4dp"
+    android:elevation="@dimen/margin_5dp"
+    card_view:cardBackgroundColor="@android:color/white"
+    android:layout_marginLeft="@dimen/margin_10dp"
+    android:layout_marginRight="@dimen/margin_10dp"
+    android:layout_marginBottom="@dimen/margin_10dp"
+    android:id="@+id/spBooking_cvParent">
+    <LinearLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="@dimen/margin_10dp">
+
+        <TextView
+            android:id="@+id/spBooking_txtBookingId"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="2211 - Activa i"
+            android:textSize="@dimen/margin_16dp"
+            android:textColor="@color/text_color"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp" />
+
+        <TextView
+            android:id="@+id/spBooking_txtCustomerName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Piyush Prajapati"
+            android:textSize="@dimen/margin_16dp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp" />
+
+        <TextView
+            android:id="@+id/spBooking_txtBookingDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="06-12-2017"
+            android:textSize="@dimen/margin_16dp"
+            android:textColor="@color/text_color"
+            android:layout_marginTop="@dimen/margin_5dp"
+            android:paddingLeft="@dimen/margin_10dp"
+            android:paddingRight="@dimen/margin_10dp" />
+
+
+
+
+
+    </LinearLayout>
+</android.support.v7.widget.CardView>

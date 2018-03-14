@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@android:color/white">
+
+    <include layout="@layout/toolbar" android:id="@+id/sd_toolbar" />
+
+
+    <TextView
+        android:id="@+id/sd_txtMonth"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nov-2017"
+        android:textSize="@dimen/margin_20dp"
+        android:textStyle="bold"
+        android:textColor="@color/text_color"
+        android:gravity="center"
+        android:padding="@dimen/margin_10dp"
+        android:visibility="gone"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_10dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sd_inquiry"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/margin_18dp" />
+
+        <TextView
+            android:id="@+id/sd_txtTotalInquiries"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/text_color"
+            android:padding="@dimen/margin_10dp"
+            android:textSize="@dimen/margin_18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:background="@color/light_gray"
+        android:layout_marginTop="@dimen/margin_5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/margin_5dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sd_booking"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/margin_18dp" />
+
+        <TextView
+            android:id="@+id/sd_txtTotalBooking"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/text_color"
+            android:padding="@dimen/margin_10dp"
+            android:textSize="@dimen/margin_18dp" />
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:background="@color/light_gray"
+        android:layout_marginTop="@dimen/margin_5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sd_delivery"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/margin_18dp" />
+
+        <TextView
+            android:id="@+id/sd_txtTotalDelivery"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/text_color"
+            android:padding="@dimen/margin_10dp"
+            android:textSize="@dimen/margin_18dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:background="@color/light_gray"
+        android:layout_marginTop="@dimen/margin_5dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/sd_collection"
+            android:padding="@dimen/margin_10dp"
+            android:textColor="@color/text_color"
+            android:textSize="@dimen/margin_18dp" />
+
+        <TextView
+            android:id="@+id/sd_txtTotalCollection"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/text_color"
+            android:padding="@dimen/margin_10dp"
+            android:textSize="@dimen/margin_18dp" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/margin_1dp"
+        android:background="@color/light_gray"
+        android:layout_marginTop="@dimen/margin_5dp"/>
+
+</LinearLayout>

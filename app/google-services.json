@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "10567702675",
+    "firebase_url": "https://honda-service.firebaseio.com",
+    "project_id": "honda-service",
+    "storage_bucket": "honda-service.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:10567702675:android:0b908b9814bc8473",
+        "android_client_info": {
+          "package_name": "com.example.priyank.shivshaktihondaservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "10567702675-uq39ebehj2nl5a7ba3gba63e8obg3ge0.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.priyank.shivshaktihondaservice",
+            "certificate_hash": "30e5cdddbca375ba0bda1af462055092c1c28e54"
+          }
+        },
+        {
+          "client_id": "10567702675-kcuu286a0erlad86fvplo5mqqmcct9cv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCFtkclVbAeRfOygUSDm541Nhk0an6x_iQ"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "10567702675-kcuu286a0erlad86fvplo5mqqmcct9cv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <include layout="@layout/toolbar" android:id="@+id/aspd_toolbar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@android:color/white"
+        android:layout_below="@id/aspd_toolbar"
+        android:layout_above="@+id/aspd_btnOk">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:layout_marginRight="@dimen/margin_10dp"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <LinearLayout
+                    android:id="@+id/inquiryDetail_llSalespersonDetail"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Name"
+                        android:textSize="@dimen/margin_18dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/aspd_txtSalespersonName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Deep Amin"
+                        android:textSize="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1dp"
+                        android:background="@color/light_gray"
+                        android:layout_marginTop="@dimen/margin_10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Email"
+                        android:textSize="@dimen/margin_18dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/aspd_txtSalespersonEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="deep@gmail.com"
+                        android:textSize="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1dp"
+                        android:background="@color/light_gray"
+                        android:layout_marginTop="@dimen/margin_10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="User Name"
+                        android:textSize="@dimen/margin_18dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/aspd_txtUserName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="deep@gmail.com"
+                        android:textSize="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1dp"
+                        android:background="@color/light_gray"
+                        android:layout_marginTop="@dimen/margin_10dp"/>
+
+                </LinearLayout>
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Mobile Number"
+                        android:textSize="@dimen/margin_18dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/aspd_txtSalespersonMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="9987788998"
+                        android:textSize="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1dp"
+                        android:background="@color/light_gray"
+                        android:layout_marginTop="@dimen/margin_10dp"/>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:visibility="visible">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Password"
+                        android:textSize="@dimen/margin_18dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color" />
+
+                    <TextView
+                        android:id="@+id/aspd_txtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="123"
+                        android:textSize="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color" />
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1dp"
+                        android:background="@color/light_gray"
+                        android:layout_marginTop="@dimen/margin_10dp"/>
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </ScrollView>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/aspd_btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_ok"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/margin_18dp"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

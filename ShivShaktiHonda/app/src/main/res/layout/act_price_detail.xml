@@ -1,0 +1,519 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <include layout="@layout/toolbar" android:id="@+id/priceDetail_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/priceDetail_toolbar"
+        android:layout_above="@+id/priceDetail_btnOk">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/Inquiry_variant_title"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtVariant"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="4G"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_exshowroom"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtExShowroom"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="65000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_insurance"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtInsurance"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="50000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_rto"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtRTO"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="5000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_extra_war"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtExtraWar"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="3000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_amc"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtAmc"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="3000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_3m_pp"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtMPP"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="60000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_acc"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtAcc"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="60000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_total"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtTotal"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="65000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1dp"
+                android:background="@color/light_gray"
+                android:layout_marginTop="@dimen/margin_10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Incentive Details"
+                android:textSize="@dimen/margin_20dp"
+                android:layout_margin="@dimen/margin_10dp"
+                android:textColor="@color/text_color" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_incentive_base"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtInventiveAmount"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="200"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_incentive_exshowroom"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtIncentiveExshowroom"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="200"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_incentive_insurance"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtIncentiveInsurance"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="200"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_incentive_rto"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtIncentiveRTO"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="200"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_incentive_amc"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtIncentiveAMC"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="200"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_incentive_ew"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtIncentiveEW"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="200"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/price_detail_screen_incentive_mpp"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="2"/>
+
+                <TextView
+                    android:id="@+id/priceDetail_txtIncentiveMPP"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="200"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginBottom="@dimen/margin_20dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="2"
+                    android:text="@string/price_detail_screen_incentive_acc"
+                    android:textColor="@color/text_color"
+                    android:textSize="@dimen/margin_18dp" />
+
+                <TextView
+                    android:id="@+id/priceDetail_txtIncentiveACC"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="200"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+            </LinearLayout>
+
+
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/priceDetail_btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_ok"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/margin_18dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"/>
+
+
+</RelativeLayout>

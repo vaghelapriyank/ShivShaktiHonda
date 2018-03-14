@@ -1,0 +1,559 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+
+    <include layout="@layout/toolbar" android:id="@+id/pd_toolbar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/pd_toolbar"
+        android:fitsSystemWindows="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_above="@+id/pd_btnEdit">
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_5dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/Inquiry_variant_title"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtVariant"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:singleLine="true"
+                            android:text="4G"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_exshowroom"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtExShowroom"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:text="65000"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_insurance"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtInsurance"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="50000"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_rto"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtRTO"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:text="5000"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_extra_war"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtExtraWar"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:text="3000"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_amc"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtAmc"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="3000"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_3m_pp"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtMPP"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:text="60000"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_acc"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtAcc"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="60000"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_total"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="1"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtTotal"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="65000"
+                            android:textSize="@dimen/margin_16dp"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+                    <View
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/margin_1dp"
+                        android:background="@color/light_gray"
+                        android:layout_marginTop="@dimen/margin_10dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="Incentive Details"
+                        android:layout_margin="@dimen/margin_10dp"
+                        android:textSize="@dimen/margin_18dp"
+                        android:textColor="@color/text_color"/>
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_incentive_base"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtIncentiveAmount"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="200"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_incentive_exshowroom"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtIncentiveExshowroom"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:text="200"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_incentive_insurance"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtIncentiveInsurance"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:text="200"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_incentive_rto"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtIncentiveRTO"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:text="200"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_incentive_amc"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtIncentiveAMC"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="200"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_incentive_ew"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtIncentiveEW"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="200"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:text="@string/price_detail_screen_incentive_mpp"
+                            android:textSize="@dimen/margin_18dp"
+                            android:textColor="@color/text_color"
+                            android:layout_weight="2"/>
+
+                        <EditText
+                            android:id="@+id/pd_edtIncentiveMPP"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="200"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:gravity="center_vertical"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:layout_marginBottom="@dimen/margin_20dp">
+
+                        <TextView
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="2"
+                            android:text="@string/price_detail_screen_incentive_acc"
+                            android:textColor="@color/text_color"
+                            android:textSize="@dimen/margin_18dp" />
+
+                        <EditText
+                            android:id="@+id/pd_edtIncentiveACC"
+                            android:layout_width="@dimen/margin_0dp"
+                            android:layout_height="wrap_content"
+                            android:singleLine="true"
+                            android:text="200"
+                            android:background="@drawable/rounded_gray_corner_view"
+                            android:textSize="@dimen/margin_16dp"
+                            android:padding="@dimen/margin_10dp"
+                            android:layout_weight="1"
+                            android:layout_marginLeft="@dimen/margin_10dp"/>
+                    </LinearLayout>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/pd_btnEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/common_edit"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/margin_18dp"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"/>
+
+    </RelativeLayout>
+</RelativeLayout>

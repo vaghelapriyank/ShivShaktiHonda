@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:gravity="center">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/margin_20dp"
+            android:layout_marginRight="@dimen/margin_20dp">
+
+            <ImageView
+                android:layout_width="@dimen/margin_100dp"
+                android:layout_height="@dimen/margin_100dp"
+                android:src="@drawable/honda_logo"/>
+
+            <EditText
+                android:id="@+id/login_edtUserName"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_username_hint"
+                android:singleLine="true"
+                android:inputType="text"
+                android:textSize="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_10dp"/>
+
+            <EditText
+                android:id="@+id/login_edtPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/login_password_hint"
+                android:singleLine="true"
+                android:inputType="textPassword"
+                android:textSize="@dimen/margin_16dp"
+                android:layout_marginTop="@dimen/margin_10dp"/>
+
+            <Button
+                android:id="@+id/login_btnSignin"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/login_btn"
+                android:background="@color/colorPrimary"
+                android:textColor="@android:color/white"
+                android:textSize="@dimen/margin_18dp"
+                android:layout_marginTop="@dimen/margin_10dp"/>
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

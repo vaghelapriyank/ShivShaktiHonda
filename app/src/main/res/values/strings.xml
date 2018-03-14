@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">ShivShaktiHonda service</string>
+    <string name="splash_app_name">Shiv Shakti Honda</string>
+
+    <!--Login Screen-->
+    <string name="login_username_hint">Enter User Name</string>
+    <string name="login_password_hint">Enter Password</string>
+    <string name="login_btn">Sign In</string>
+    <string name="title_activity_view_dashboard">ViewDashboard</string>
+    <!--Change Password-->
+    <string name="change_password_title">Change Password</string>
+    <string name="oldpassword_hint">Enter Old Password</string>
+    <string name="newpassword_hint">Enter New Password</string>
+    <string name="confirm_password_hint">Enter Confirm Password</string>
+</resources>

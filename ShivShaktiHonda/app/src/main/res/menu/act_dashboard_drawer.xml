@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_dashboard"
+            android:title="Dashboard" />
+        <item
+            android:id="@+id/nav_salesPerson"
+            android:title="Sales Person"
+            android:visible="false"/>
+        <item
+            android:id="@+id/nav_inquiry"
+            android:title="Inquiry" />
+        <item
+            android:id="@+id/nav_booking"
+            android:title="Bookings" />
+        <item
+            android:id="@+id/nav_delivery"
+            android:title="Deliveries" />
+
+        <item
+            android:id="@+id/nav_changepassword"
+            android:title="Change Password" />
+
+        <item
+            android:id="@+id/nav_summary"
+            android:title="Summaries" />
+
+        <item
+            android:id="@+id/nav_pricelist"
+            android:title="Price List" />
+
+        <item
+            android:id="@+id/nav_logout"
+            android:title="Logout" />
+    </group>
+
+</menu>

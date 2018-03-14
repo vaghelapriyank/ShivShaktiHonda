@@ -1,0 +1,424 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white">
+
+    <include layout="@layout/toolbar" android:id="@+id/deliveryDetail_toolbar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/deliveryDetail_toolbar"
+        android:layout_above="@+id/deliveryDetail_btnOk">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginLeft="@dimen/margin_10dp"
+            android:layout_marginRight="@dimen/margin_10dp"
+            android:layout_marginTop="@dimen/margin_10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking_form_customer_name"
+                        android:textSize="@dimen/margin_18dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/deliveryDetail_txtCustomerName"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="10001"
+                        android:textSize="@dimen/margin_16dp"
+                        android:textColor="@color/text_color"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking_form_customer_mobile"
+                        android:textSize="@dimen/margin_18dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/deliveryDetail_txtCustomerMobile"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="10001"
+                        android:textSize="@dimen/margin_16dp"
+                        android:textColor="@color/text_color"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:text="@string/booking_form_model_name"
+                        android:textSize="@dimen/margin_18dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/deliveryDetail_txtModelName"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="10001"
+                        android:textSize="@dimen/margin_16dp"
+                        android:textColor="@color/text_color"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/deliveryDetail_llSalesPerson"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:text="Sales Person"
+                        android:textSize="@dimen/margin_18dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color"
+                        android:layout_weight="1"/>
+
+                    <TextView
+                        android:id="@+id/deliveryDetail_txtSalesPerson"
+                        android:layout_width="@dimen/margin_0dp"
+                        android:layout_height="wrap_content"
+                        android:singleLine="true"
+                        android:text="10001"
+                        android:textSize="@dimen/margin_16dp"
+                        android:textColor="@color/text_color"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_weight="1"/>
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/margin_1dp"
+                    android:background="@color/light_gray"
+                    android:layout_marginTop="@dimen/margin_10dp"/>
+
+
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_form_engine_number"
+                android:textSize="@dimen/margin_18dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:textColor="@color/text_color"/>
+
+            <TextView
+                android:id="@+id/deliveryDetail_txtEngineNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:textSize="@dimen/margin_16dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:text="1111111111111111"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_form_chesis_number"
+                android:textSize="@dimen/margin_18dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/margin_10dp"/>
+
+            <TextView
+                android:id="@+id/deliveryDetail_txtChesisNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="222222222222222"
+                android:textSize="@dimen/margin_16dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_form_battery_number"
+                android:textSize="@dimen/margin_18dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/margin_10dp"/>
+
+            <TextView
+                android:id="@+id/deliveryDetail_txtBatteryNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="123456789"
+                android:textSize="@dimen/margin_16dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_form_key_number"
+                android:textSize="@dimen/margin_18dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/margin_10dp"/>
+
+            <TextView
+                android:id="@+id/deliveryDetail_txtKeyNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="1123322112233"
+                android:textSize="@dimen/margin_16dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_form_dc_number"
+                android:textSize="@dimen/margin_18dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:textColor="@color/text_color"
+                android:layout_marginTop="@dimen/margin_10dp"/>
+
+            <TextView
+                android:id="@+id/deliveryDetail_txtDCNumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                android:inputType="number"
+                android:text="789456123"
+                android:textSize="@dimen/margin_16dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/margin_1dp"
+                android:background="@color/light_gray"
+                android:layout_marginTop="@dimen/margin_20dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/delivery_form_price_title"
+                android:textSize="@dimen/margin_18dp"
+                android:paddingTop="@dimen/margin_5dp"
+                android:paddingBottom="@dimen/margin_5dp"
+                android:textColor="@color/text_color"
+                android:textStyle="bold"
+                android:layout_marginTop="@dimen/margin_10dp"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_form_price_total"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/deliveryDetail_txtTotalPrice"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="65000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_5dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_form_price_booking_amount"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/deliveryDetail_txtBookingAmount"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="5000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_form_price_discount"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/deliveryDetail_txtDiscountPrice"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="5000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_10dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/delivery_form_price_difference"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/deliveryDetail_txtDifferencePrice"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="60000"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center_vertical"
+                android:layout_marginTop="@dimen/margin_10dp"
+                android:layout_marginBottom="@dimen/margin_10dp">
+
+                <TextView
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:text="@string/booking_detail_payment_type"
+                    android:textSize="@dimen/margin_18dp"
+                    android:textColor="@color/text_color"
+                    android:layout_weight="1"/>
+
+                <TextView
+                    android:id="@+id/deliveryDetail_txtPaymentType"
+                    android:layout_width="@dimen/margin_0dp"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:text="CASH"
+                    android:textSize="@dimen/margin_16dp"
+                    android:padding="@dimen/margin_10dp"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/margin_10dp"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+    <Button
+        android:id="@+id/deliveryDetail_btnOk"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/common_ok"
+        android:background="@color/colorPrimary"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/margin_18dp"
+        android:textAllCaps="false"
+        android:layout_alignParentBottom="true"/>
+
+</RelativeLayout>
