@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.priyank.shivshaktihondaservice.add_person">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_above="@+id/add_btnAdd">
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@android:color/white">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="vertical"
+                    android:layout_marginLeft="@dimen/margin_10dp"
+                    android:layout_marginRight="@dimen/margin_10dp"
+                    android:paddingBottom="@dimen/margin_20dp"
+                    >
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salespersondetail_screen_name"
+                        android:textSize="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        />
+
+                    <EditText
+                        android:id="@+id/add_edtName"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:singleLine="true"
+                        android:inputType="textCapWords"
+                        android:textSize="@dimen/margin_16dp"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salespersondetail_screen_email"
+                        android:textSize="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color"/>
+
+                    <EditText
+                        android:id="@+id/add_edtEmail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:singleLine="true"
+                        android:textSize="@dimen/margin_16dp"
+                        android:padding="@dimen/margin_10dp"
+                        android:layout_marginTop="@dimen/margin_5dp"/>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salespersondetail_screen_mobilenumber"
+                        android:textSize="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color"/>
+
+                    <EditText
+                        android:id="@+id/add_edtMobileNumber"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:singleLine="true"
+                        android:textSize="@dimen/margin_16dp"
+                        android:padding="@dimen/margin_10dp"
+                        android:inputType="number"
+                        android:layout_marginTop="@dimen/margin_5dp"/>
+
+                    <TextView
+                        android:id="@+id/add_txtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:text="@string/salespersondetail_screen_password"
+                        android:textSize="@dimen/margin_16dp"
+                        android:paddingTop="@dimen/margin_5dp"
+                        android:paddingBottom="@dimen/margin_5dp"
+                        android:textColor="@color/text_color"/>
+
+                    <EditText
+                        android:id="@+id/add_edtPassword"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:singleLine="true"
+                        android:textSize="@dimen/margin_16dp"
+                        android:padding="@dimen/margin_10dp"
+                        android:inputType="textPassword"
+                        android:layout_marginTop="@dimen/margin_5dp"/>
+
+
+                </LinearLayout>
+            </ScrollView>
+        </LinearLayout>
+        <Button
+            android:id="@+id/add_btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/common_add"
+            android:background="@color/colorPrimary"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/margin_18dp"
+            android:textAllCaps="false"
+            android:layout_alignParentBottom="true"/>
+    </RelativeLayout>
+
+</android.support.constraint.ConstraintLayout>
